@@ -16,6 +16,7 @@ public class DataBindSpeed : MonoBehaviour
 
     private IEnumerator UpdateSpeedRoutine()
     {
+        yield return new WaitForSeconds(2.5f);
         while (true)
         {
             m_speed = UnityEngine.Random.Range(80, 101);
