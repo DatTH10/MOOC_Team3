@@ -43,9 +43,9 @@ public class GaugeECO : MonoBehaviour
 
     private IEnumerator FillRoutine(Image arg_img)
     {
-        yield return StartCoroutine(FillAmount(arg_img, 0f, 1f, 0.8f));
+        yield return StartCoroutine(FillAmount(arg_img, 0f, 1f, 1.4f));
 
-        yield return StartCoroutine(FillAmount(arg_img, 1f, 0f, 0.8f));
+        yield return StartCoroutine(FillAmount(arg_img, 1f, 0f, 1.4f));
 
         yield return StartCoroutine(FillAmount(arg_img, 0f, 0.4f, 0.6f));
 
@@ -68,7 +68,7 @@ public class GaugeECO : MonoBehaviour
 
     private IEnumerator RotateRoutineNeedle(Image arg_img, float arg_startZ, float arg_targetZ, float arg_duration)
     {
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(2.8f);
         Quaternion from = Quaternion.Euler(0f, 0f, arg_startZ);
         Quaternion to = Quaternion.Euler(0f, 0f, arg_targetZ);
 
