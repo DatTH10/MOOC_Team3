@@ -14,14 +14,18 @@ public class DataBindSpeed : MonoBehaviour
         StartCoroutine(UpdateSpeedRoutine());
     }
 
+    public bool isMove = false;
+
     private IEnumerator UpdateSpeedRoutine()
     {
         yield return new WaitForSeconds(2.5f);
+        isMove = true;
         while (true)
         {
             m_speed = UnityEngine.Random.Range(80, 101);
 
             yield return new WaitForSeconds(0.2f);
         }
+
     }
 }

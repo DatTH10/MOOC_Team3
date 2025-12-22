@@ -57,7 +57,7 @@ public class GhostCarMove : MonoBehaviour
 
     IEnumerator Move()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.5f);
         transform.localPosition = points[0];
         while (true)
         {
